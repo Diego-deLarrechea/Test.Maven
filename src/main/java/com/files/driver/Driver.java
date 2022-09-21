@@ -12,12 +12,12 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 	public class Driver {
-		public static void goToMainPageDespegar(WebDriver driver) {
+		public static void PaginaDespegar(WebDriver driver) {
 			driver.manage().window().maximize();
 			driver.get("https://www.despegar.com");	
 			
 			}
-			public static WebDriver iniciarDriver(String browserName) {
+			public static WebDriver iniciodeDriver(String browserName) {
 				WebDriver driver=null;
 				
 				switch(browserName) {
@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
 					break;
 				}
 				default:
-					Reporter.log("No selecciona ningun browser correcto, se asigna chrome");
+					Reporter.log("No selecciona browser, se asigna chrome");
 					System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver.exe");
 					Reporter.log("Abre browser");
 					driver=new ChromeDriver();
