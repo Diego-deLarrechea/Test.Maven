@@ -36,7 +36,7 @@ import org.testng.annotations.Test;
 				}
 				default:
 					Reporter.log("No selecciona ningun browser correcto, se asigna chrome");
-					System.setProperty("webdriver.chrome.driver", "src/resources/Recursos/chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver.exe");
 					Reporter.log("Abre browser");
 					driver=new ChromeDriver();
 					
